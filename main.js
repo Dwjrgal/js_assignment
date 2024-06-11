@@ -31,6 +31,7 @@ console.log("Hamgiin ih huvisagchtai too: ",z);
 
 
 
+
 // Bodlogo-6
 
 let x =85, y =75, o=96, f=69; 
@@ -89,4 +90,30 @@ if (scoreOchir <60){
     }else if (293>289);{
         console.log("A team turuulsen");
     }
+
+
+
+    // Bodlogo-11
+
+    let height =160;
+    let age = 11;
+
+    if (height >=140){
+        console.log("Dugui unaj bolno");
+    }else{
+        console.log("Not allowed to ride");
+    }
+
+    if(age >=10){   
+    console.log("Dugui unaj bolno",age >=10)
+    }
+
+
+    // Bodlogo-12
+
+
+    let t1 =7,t2=22, t3=13, t4=30;
+
+    console.log ("11-t huvaagdahgui toonuudin niilber:",t1+t3+t4);
+
 
