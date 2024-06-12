@@ -92,3 +92,16 @@ for (let n=0; n<=8; n++){
 }
 
 console.log ("Sondgoi toonuudiin niilber:",n);
+
+
+// Bodlogo-10
+
+for (let too =1; too <=10; too++){
+    too+=too%2 ===1;
+    console.log ("Tegsh toonuud:",too);
+}
+
+
+
+
+// Bodlogo-11
