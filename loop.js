@@ -62,3 +62,33 @@ console.log ("4-iin factorial:",factorial);
 let a=1, b= 2, c=3;
 
 console.log ("Цифрүүдийн нийлбэр:",a+b+c);
+
+
+// Bodlogo-8
+
+let x1 =1, x2=2, x3=3, x4 =4;
+
+if (x1%2===0 && x2%2 ===0){
+    console.log (x1+x2);
+}else if (x1%2 ===0 && x3%2 ===0){
+    console.log (x1+x3)
+}else if (x2%2 ===0 && x4%2 ===0){
+    console.log ("Tegsh toonuudiin niilber:",x2+x4);
+}
+
+
+// Bodlogo-9
+
+let n =0;
+let nm = 0;
+
+
+for (let n=0; n<=8; n++){
+    n+=n%2===0;
+    // nm++;
+    // n =n+nm;
+
+    console.log ("Sondgoi toonuud:", n);
+}
+
+console.log ("Sondgoi toonuudiin niilber:",n);
