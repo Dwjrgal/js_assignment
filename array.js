@@ -36,10 +36,10 @@ console.log ( "Array length:",arrayOfNumbers.length);
 // daalgavar-3/2 array dotorh toonuudiin niilber:
 
 let sum =0;
-let i =0;
+let nem =0;
 
 for (let  i=0; i<= array.length; i++ ){
-    i++;
+    nem++;
     sum=sum +arrayOfNumbers[i];
 }
 
@@ -59,11 +59,10 @@ for (let i=0; i <=arrayOfNumbers.length; i++){
     if (arrayOfNumbers [i]%2 ===1){
         som++;
         numb = numb +arrayOfNumbers[i];
-        console.log ("Sondgoi toonuudiin niilber:",numb);
-
     }
 }
 
+console.log ("Sondgoi toonuudiin niilber:",numb);
 
 // daalgavar-3/5 array dotorh  tegsh toonuudiin niilber  :
 
@@ -74,7 +73,7 @@ let sem =0;
 for (let i=0; i <=arrayOfNumbers.length; i++){
     if (arrayOfNumbers [i]%2 ===0){
         nom = nom +arrayOfNumbers[i];
-        console.log ("Sondgoi toonuudiin niilber:",n);
-
     }
 }
+
+console.log ("Tegsh toonuudiin niilber:",nom);
