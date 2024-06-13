@@ -76,29 +76,38 @@ console.log ("Digit som:",som);
 
 // // Bodlogo-8
 
-let x1 =1, x2=2, x3=3, x4 =4;
+let tooo = 1234;
+let dig = 0;
+let sam = 0;
 
-if (x1%2===0 && x2%2 ===0){
-    console.log (x1+x2);
-}else if (x1%2 ===0 && x3%2 ===0){
-    console.log (x1+x3)
-}else if (x2%2 ===0 && x4%2 ===0){
-    console.log ("Tegsh toonuudiin niilber:",x2+x4);
+while (tooo > 0){
+    dig = tooo % 10;
+    tooo = tooo - dig;
+    tooo = tooo / 10;
+    if(dig % 2 === 0) {
+        console.log("tegsh", dig)
+        sam = sam + dig;
+    }
 }
 
-
-// Bodlogo-9
-
-let n =0;
-let nm = 0;
+console.log ("Tegsh tsipriin niilber:",sam);
 
 
-for (let n=0; n<=8; n++){
-    n+=n%2===0;
-    // nm++;
-    // n =n+nm;
 
-    console.log ("Sondgoi toonuud:", n);
+// // Bodlogo-9
+
+let nom = 1234;
+let deg = 0;
+let sem = 0;
+
+while (nom > 0){
+    deg = nom % 10;
+    nom = nom - deg;
+    nom = nom / 10;
+    if(deg % 2 === 1) {
+        console.log("Sondgoi", deg)
+        sem = sem + deg;
+    }
 }
 
 console.log ("Sondgoi tsipriin niilber:",sem);
@@ -108,21 +117,22 @@ console.log ("Sondgoi tsipriin niilber:",sem);
 
 // // Bodlogo-10
 
-// let odd = 0;
-// let des = 0;
-// let sim = 0;
+let odd = 0;
+let des = 0;
+let sim = 0;
 
-// while (odd <=20){
-//     des = odd % 10;
-//     odd =odd - des;
-//    odd = odd / 10;
-//     if(des % 2 === 0) {
-//         console.log("tegsh", des);
-//         sim = sim + des;
-//     }
-// }
+while (odd <=20){
+    des = odd % 10;
+    odd =odd - des;
+   odd = odd / 10;
+    if(des % 2 === 0) {
+        console.log("tegsh", des);
+        sim = sim + des;
+    }
+}
 
-// console.log ("N hurtelh toonii tegsh tsipruudiin niilber:", sim);
+console.log ("N hurtelh toonii tegsh tsipruudiin niilber:", sim);
 
 
 // Bodlogo-11
+
