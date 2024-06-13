@@ -77,3 +77,32 @@ for (let i=0; i <=arrayOfNumbers.length; i++){
 }
 
 console.log ("Tegsh toonuudiin niilber:",nom);
+
+
+
+// Daalgavar-3/6 array dotorh sondgoi toonuudiin urjver :
+
+
+let number =1;
+let dig =0;
+
+for (let i=0; i <=arrayOfNumbers.length; i++){
+    if (arrayOfNumbers [i]%2 ===1){
+        number = number *arrayOfNumbers[i];
+    }
+}
+
+
+console.log ("Array dotorh sondgoi toonuudiin urjver :", number);
+
+
+// Daalgavar-3/7 array dotorh hamgiin ih too ? :
+
+let too=0;
+let deg =0;
+
+if (arrayOfNumbers[0] != arrayOfNumbers[1]){
+    too*=arrayOfNumbers[0];
+}
+
+console.log (arrayOfNumbers[0]);
