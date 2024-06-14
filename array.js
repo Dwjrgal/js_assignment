@@ -66,8 +66,8 @@ console.log ("Sondgoi toonuudiin niilber:",numb);
 // daalgavar-3/5 array dotorh  tegsh toonuudiin niilber  :
 
 
-// let nom =0;
-// let sem =0;
+let nom =0;
+let sem =0;
 
 for (let i=0; i <=arrayOfNumbers.length; i++){
     if (arrayOfNumbers [i]%2 ===0){
@@ -97,11 +97,26 @@ console.log ("Array dotorh sondgoi toonuudiin urjver :", number);
 
 // Daalgavar-3/7 array dotorh hamgiin ih too ? :
 
-let too=0;
-let deg =0;
 
-if (arrayOfNumbers[0] != arrayOfNumbers[1]){
-    too*=arrayOfNumbers[0];
+let largestNum = arrayOfNumbers[0]; 
+
+for(let i = 0; i < arrayOfNumbers.length; i++) {
+    if(arrayOfNumbers[i] > largestNum) {
+        largestNum = arrayOfNumbers[i]
+    }
 }
 
-console.log (arrayOfNumbers[0]);
+console.log("largest number :", largestNum)
+
+
+// Daalgavar-3/8 array dotorh hamgiin baga too ? :
+
+let  smallestNum = arrayOfNumbers[0];
+
+for (let i =0; i <arrayOfNumbers.length; i++){
+    if (arrayOfNumbers[i]< smallestNum){
+        smallestNum = arrayOfNumbers[i]
+    }
+}
+
+console.log ("smallest number:", smallestNum);
