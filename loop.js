@@ -19,8 +19,10 @@ for (let i =0; i<=10; i++){
 // // Bodlogo-3
 
 for (let i =0; i<=10; i++){
-    i+=i%2===1;
-    console.log ("Tegsh toonuud:", i);
+    if(i%2===1){
+        console.log ("Tegsh toonuud:", i);
+    }
+    
 }
 
 

@@ -36,10 +36,10 @@ console.log ( "Array length:",arrayOfNumbers.length);
 // daalgavar-3/2 array dotorh toonuudiin niilber:
 
 let sum =0;
-let i =0;
+let nem =0;
 
 for (let  i=0; i<= array.length; i++ ){
-    i++;
+    nem++;
     sum=sum +arrayOfNumbers[i];
 }
 
@@ -58,10 +58,10 @@ let som =0;
 for (let i=0; i <=arrayOfNumbers.length; i++){
     if (arrayOfNumbers [i]%2 ===1){
         numb = numb +arrayOfNumbers[i];
-        console.log ("Sondgoi toonuudiin niilber:",numb);
     }
 }
 
+console.log ("Sondgoi toonuudiin niilber:",numb);
 
 // daalgavar-3/5 array dotorh  tegsh toonuudiin niilber  :
 
@@ -69,10 +69,39 @@ for (let i=0; i <=arrayOfNumbers.length; i++){
 // let nom =0;
 // let sem =0;
 
-// for (let i=0; i <=arrayOfNumbers.length; i++){
-//     if (arrayOfNumbers [i]%2 ===0){
-//         nom = nom +arrayOfNumbers[i];
-//         console.log ("Sondgoi toonuudiin niilber:",n);
+for (let i=0; i <=arrayOfNumbers.length; i++){
+    if (arrayOfNumbers [i]%2 ===0){
+        nom = nom +arrayOfNumbers[i];
+    }
+}
 
-//     }
-// }
+console.log ("Tegsh toonuudiin niilber:",nom);
+
+
+
+// Daalgavar-3/6 array dotorh sondgoi toonuudiin urjver :
+
+
+let number =1;
+let dig =0;
+
+for (let i=0; i <=arrayOfNumbers.length; i++){
+    if (arrayOfNumbers [i]%2 ===1){
+        number = number *arrayOfNumbers[i];
+    }
+}
+
+
+console.log ("Array dotorh sondgoi toonuudiin urjver :", number);
+
+
+// Daalgavar-3/7 array dotorh hamgiin ih too ? :
+
+let too=0;
+let deg =0;
+
+if (arrayOfNumbers[0] != arrayOfNumbers[1]){
+    too*=arrayOfNumbers[0];
+}
+
+console.log (arrayOfNumbers[0]);
