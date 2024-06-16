@@ -101,7 +101,7 @@ console.log ("Array dotorh sondgoi toonuudiin urjver :", number);
 let too=0;
 let deg =0;
 
-if (arrayOfNumbers[0] != arrayOfNumbers[1]){
+if (arrayOfNumbers[0] < arrayOfNumbers[1]){
     too*=arrayOfNumbers[0];
 }
 
