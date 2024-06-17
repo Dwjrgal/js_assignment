@@ -38,8 +38,8 @@ ogsonToo();
 
 // Daalgavar-3 Ogogdson temdegt moroos ogogdson temdegt mor baigaa esehiig ol
 
-let arraySign = ["!","@","#"]
-let sign = "!";
+// let arraySign = ["!","@","#"]
+// let sign = "!";
 
 // function arSign(){
 //     for (let i = 0; i < arySign.length; i++){
@@ -64,8 +64,7 @@ function average (){
     let numbers = [ 12, 23, 52, 15,]
     for (let i =0; i < numbers.length; i++){
         nem++;
-        sum = sum +nem;
-        sum =sum/numbers.length;
+        sum = (sum +nem)/numbers.length;
     }
 }
 
@@ -76,3 +75,111 @@ average();
 
 // Daalgavar -5 array dotorh niilber oloh 
 
+// let sum2 = o;
+// let nem2 = 0; 
+
+
+
+
+
+// Daalgavar -6 anhnii too mon esehiig oloh function bich
+
+
+
+
+// Daalgavar -7
+
+
+// Daalgavar-8 string utgiig urvuugaar bich
+
+
+
+// Daalgavar-9/1 ehnii objectiig hevlej garga
+
+
+let students = [
+
+    {
+
+    name: 'Сэд-Эрдэнэ',
+
+    age: 19,
+
+    gender: "male",
+
+points: 70
+
+},
+
+{
+
+    name: 'Индра',
+
+    age: 19,
+
+    gender: "female",
+
+points: 50
+
+},
+
+    {
+
+    name: 'Хатнаа ',
+
+    age: 21,
+
+    gender: "male",
+
+points: 99
+
+},
+
+    {
+
+    name: 'Тэмүүлэн',
+
+    age: 23,
+
+    gender: "male",
+
+points: 55
+
+},
+
+    {
+
+    name: 'Намуун',
+
+    age: 23,
+
+    gender: "female",
+
+points: 85
+
+},
+
+// eregtei emegtei suragchiin too
+
+  function genderNum (male ,female) {
+    return male ,female
+}
+
+]
+ let som =0;
+ let sam = 0;
+
+
+function averageAge(){
+    for (let i =0; i <students.length; i++){
+        sam++;
+        som =som +students[i]
+    }
+}
+console.log ("Average age:", som)
+
+console.log (students[0]);
+
+// let gen = genderNum (3 ,2);
+
+// console.log ("Eregtei emegtei huisiin too:", gen)
