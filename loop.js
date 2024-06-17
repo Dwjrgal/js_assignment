@@ -119,21 +119,23 @@ console.log ("Sondgoi tsipriin niilber:",sem);
 
 // // Bodlogo-10
 
-// let odd = 0;
-// let des = 0;
-// let sim = 0;
+let odd = 0;
+let des = 0;
+let sim = 0;
 
-// while (odd <=20){
-//     des = odd % 10;
-//     odd =odd - des;
-//    odd = odd / 10;
-//     if(des % 2 === 0) {
-//         sim = sim + des;
-//     }
-// }
+while (odd <=20){
+    des = odd % 10;
+    odd =odd - des;
+   odd = odd / 10;
+    if(des % 2 === 0) {
+        sim = sim + des;
+    }
+}
 
-// console.log ("N hurtelh toonii tegsh tsipruudiin niilber:", sim);
+console.log ("N hurtelh toonii tegsh tsipruudiin niilber:", sim);
 
 
 // Bodlogo-11
+
+
 

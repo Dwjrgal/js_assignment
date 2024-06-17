@@ -83,7 +83,6 @@ console.log ("Tegsh toonuudiin niilber:",nom);
 
 
 let number =1;
-let dig =0;
 
 for (let i=0; i <=arrayOfNumbers.length; i++){
     if (arrayOfNumbers [i]%2 ===1){
@@ -120,3 +119,5 @@ for (let i =0; i <arrayOfNumbers.length; i++){
 }
 
 console.log ("smallest number:", smallestNum);
+
+
