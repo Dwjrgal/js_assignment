@@ -63,8 +63,8 @@ let nem = 0;
 function average (){
     let numbers = [ 12, 23, 52, 15,]
     for (let i =0; i < numbers.length; i++){
-        nem ++;
-        sum = sum +numbers[i];
+        nem++;
+        sum = sum +nem;
         sum =sum/numbers.length;
     }
 }
@@ -72,3 +72,7 @@ function average (){
 console.log ("Average:",sum)
 
 average();
+
+
+// Daalgavar -5 array dotorh niilber oloh 
+
