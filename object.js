@@ -173,7 +173,7 @@ points: 85
 function averageAge(){
     for (let i =0; i <students.length; i++){
         sam++;
-        som =som +students[i]
+        som =som +students.gender[i]
     }
 }
 console.log ("Average age:", som)
@@ -183,3 +183,4 @@ console.log (students[0]);
 // let gen = genderNum (3 ,2);
 
 // console.log ("Eregtei emegtei huisiin too:", gen)
+
