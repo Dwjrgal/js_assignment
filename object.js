@@ -77,8 +77,8 @@ console.log(sumArray(sumNum, sumn));
 
 // Daalgavar -6 anhnii too mon esehiig oloh function bich
 
-function aToo(x, y, z, m) {
-  return x / 1 === 1;
+function aToo(x) {
+  return x / x === 1;
 }
 
 let anhniiToo = aToo(1, 2, 3);
@@ -183,3 +183,28 @@ console.log(students[0]);
 
 // let rep = findGen(students);
 // console.log("Average age:", rep);
+
+// Нас нь 21-ээс дээш буюу тэнцүү сурагчдыг ол
+
+// function age21() {
+//   if (students[i].age >= 21) {
+//     return students[i].age;
+//   }
+//   let nastai = students[i].age;
+// }
+
+// let ages = age21();
+// console.log("21 s deesh nastai:", ages);
+
+// 60-аас дээш оноо авсан cурагчдийг тоол
+
+function more60() {
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].points > 60) {
+      return (onoo = students[i].points);
+    }
+  }
+}
+
+let onootoi = more60();
+console.log("60s deesh onootoi:", onootoi);
