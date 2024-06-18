@@ -186,7 +186,7 @@ console.log(students[0]);
 // let gender = findGen ();
 // console.log ("Eregtei emegtei too:", gender);
 
-// Нас нь 21-ээс дээш буюу тэнцүү сурагчдыг ол
+// Нас нь 21-ээс дээш буюу тэнцүү сурагчдыг ол =>
 
 function age21() {
 for (let i =0; i <students.length; i++){
@@ -199,7 +199,7 @@ for (let i =0; i <students.length; i++){
 let ages = age21();
 console.log("21 s deesh nastai:", ages);
 
-// 60-аас дээш оноо авсан cурагчдийг тоол
+// 60-аас дээш оноо авсан cурагчдийг тоол =>
 
 function more60() {
   for (let i = 0; i < students.length; i++) {
@@ -213,6 +213,20 @@ let onoo = 0;
 let onootoi = more60();
 console.log("60s deesh onootoi:", onoo);
 
-// JS EXTRA-ASSIGNMENTS
 
 
+
+// -------------JS EXTRA-ASSIGNMENTS --------//
+
+
+
+let arr =[ 1, 2, 3, 4, 5]
+
+let max = Math.max (...arr);
+console.log ("MAX:",max);
+
+let min = Math.min (...arr);
+console.log ("MIN:",min);
+
+let ave = Math.avg (...arr);
+console.log ("Average:", ave);
