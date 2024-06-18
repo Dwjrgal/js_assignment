@@ -31,20 +31,20 @@ let idx = findIndex(array, 10);
 
 // Daalgavar-3 Ogogdson temdegt moroos ogogdson temdegt mor baigaa esehiig ol
 
-let arraySign = ["!", "@", "#"];
-let sign = "!";
+let arraySign = ["Hello"];
 
-function arSign() {
+function arSign(arsign, sign) {
   for (let i = 0; i < arSign.length; i++) {
-    if (arSign[i] == sign) {
-      sign = arraySign[i];
+    if (arSign[i] === sign) {
+      return i;
     }
   }
+  return -1;
 }
 
-console.log("Ogogdson temdegt:", sign);
+// let signx = arSign(arraySign, H);
+// console.log ("index :",signx);
 
-arSign();
 
 // Daalgavar-4 Array iin dundajiig oloh /function bich
 
