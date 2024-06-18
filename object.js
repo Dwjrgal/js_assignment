@@ -64,9 +64,9 @@ console.log(findAverage(arrayNum, sum));
 
 // Daalgavar -5 array dotorh niilber oloh
 
-function sumArray() {
+function sumArray(sumNum) {
   let nom = 0;
-  for (let i = 0; i < sumn.length; i++) {
+  for (let i = 0; i < sumNum.length; i++) {
     sumn = sumn + numbers[i];
   }
   console.log("sum:", sumn);
@@ -75,15 +75,19 @@ let sumn = 0;
 let sumNum = [23, 42, 11, 80];
 console.log(sumArray(sumNum, sumn));
 
-// Daalgavar -6 anhnii too mon esehiig oloh function bich
+// Daalgavar -6  Өгөгдсөн тоо анхны эсэхийг олох функц бич.
 
-function aToo(x) {
-  return x / x === 1;
+function anhniiToo(x){
+    if (x <=1 )return false;
+    if ( x===2 )return true;
+
+    for (let i =3; i*i<x; i+=2){
+        if (x % i === 0) return false;
+    }
+    return true;
 }
 
-let anhniiToo = aToo(1, 2, 3);
-
-console.log("Anhnii too:", anhniiToo);
+console.log ( "Anhnii too mon eseh:",anhniiToo(2));
 
 // Daalgavar -7
 
