@@ -1,186 +1,167 @@
-// JS function & object assignment 
-
+// JS function & object assignment
 
 // Daalgavar-1 Ogogdson 2 toonii ihiig oloh function bich
 
-let x =10;
-let y = 12;
-
-function ihToo () {
-    if ( x >y ){
-        console.log("Hamgiin ih too :",x)
-    }else  {
-        console.log ("Hamgiiin ih too:",y)
-    }
-
+function ihToo(x, y) {
+  if (x > y) {
+    return x;
+  } else {
+    return y;
+  }
 }
-
-ihToo();
-
+let largestNum = ihToo(10, 12);
+console.log("Hamgiin ih too:", largestNum);
 
 // Daalgavar-2  Ogogdson array - s ogogdson too baigaa esehiig ol
 
-let array = [ 10, 20, 30,]
-let num =10;
+let array = [10, 20, 30];
+let num = 10;
 
-function ogsonToo(){
-for (let i =0; i < array.length; i++){
-if (array[i] === num){
-    num = array[i]
+function findIndex(array, num) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === num) {
+      return i;
+    }
+  }
+  return -1;
 }
-}
+console.log("Ogogdson too:", num);
 
-}
-console.log ("Ogogdson too:", num)
-
-ogsonToo();
-
+let idx = findIndex(array, 10);
 
 // Daalgavar-3 Ogogdson temdegt moroos ogogdson temdegt mor baigaa esehiig ol
 
-// let arraySign = ["!","@","#"]
-// let sign = "!";
+let arraySign = ["!", "@", "#"];
+let sign = "!";
 
-// function arSign(){
-//     for (let i = 0; i < arySign.length; i++){
-//         if (arSign[i] == sign){
-//             sign = arraySign[i]
-//         }
-//     }
-// }
+function arSign() {
+  for (let i = 0; i < arSign.length; i++) {
+    if (arSign[i] == sign) {
+      sign = arraySign[i];
+    }
+  }
+}
 
-// console.log ("Ogogdson temdegt:",sign);
+console.log("Ogogdson temdegt:", sign);
 
-// arSign();
-
+arSign();
 
 // Daalgavar-4 Array iin dundajiig oloh /function bich
 
-
-let sum = 0;
-let nem = 0;
-
-function average (){
-    let numbers = [ 12, 23, 52, 15,]
-    for (let i =0; i < numbers.length; i++){
-        nem++;
-        sum = (sum +nem)/numbers.length;
-    }
+function findAverage(numbers, sum) {
+  let average = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum = sum + numbers[i];
+  }
+  console.log("sum", sum);
+  return (average = sum / numbers.length);
+  console.log("average", average);
 }
 
-console.log ("Average:",sum)
+let sum = 0;
+let arrayNum = [12, 23, 52, 15];
+console.log(findAverage(arrayNum, sum));
 
-average();
+// Daalgavar -5 array dotorh niilber oloh
 
+// function sumArray(sumn) {
+//   for (let i = 0; i < sumn.length; i++) {
+//     sumn = sumn + numbers[i];
+//   }
+//   console.log("sum", sumn);
+// }
+// let sumn = 0;
+// let sumNum = [23, 42, 11, 80];
 
-// Daalgavar -5 array dotorh niilber oloh 
-
-// let sum2 = o;
-// let nem2 = 0; 
-
-
-
-
+// console.log(sumArray(sumNum, sumn));
 
 // Daalgavar -6 anhnii too mon esehiig oloh function bich
 
+function aToo(x, y, z, m) {
+  return x / 1 === 1;
+}
 
+let anhniiToo = aToo(1, 2, 3);
 
+console.log("Anhnii too:", anhniiToo);
 
 // Daalgavar -7
 
-
 // Daalgavar-8 string utgiig urvuugaar bich
 
+let string = ["Hello"];
 
-
-// Daalgavar-9/1 ehnii objectiig hevlej garga
-
+for (let i = 0; i < string.length; i++) {}
 
 let students = [
-
-    {
-
-    name: 'Сэд-Эрдэнэ',
+  {
+    name: "Сэд-Эрдэнэ",
 
     age: 19,
 
     gender: "male",
 
-points: 70
+    points: 70,
+  },
 
-},
-
-{
-
-    name: 'Индра',
+  {
+    name: "Индра",
 
     age: 19,
 
     gender: "female",
 
-points: 50
+    points: 50,
+  },
 
-},
-
-    {
-
-    name: 'Хатнаа ',
+  {
+    name: "Хатнаа ",
 
     age: 21,
 
     gender: "male",
 
-points: 99
+    points: 99,
+  },
 
-},
-
-    {
-
-    name: 'Тэмүүлэн',
+  {
+    name: "Тэмүүлэн",
 
     age: 23,
 
     gender: "male",
 
-points: 55
+    points: 55,
+  },
 
-},
-
-    {
-
-    name: 'Намуун',
+  {
+    name: "Намуун",
 
     age: 23,
 
     gender: "female",
 
-points: 85
+    points: 85,
+  },
 
-},
+  // eregtei emegtei suragchiin too
 
-// eregtei emegtei suragchiin too
+  function genderNum(gender) {
+    return gender == male;
+  },
+];
 
-  function genderNum (male ,female) {
-    return male ,female
+let som = 0;
+let sam = 0;
+
+function averageAge() {
+  for (let i = 0; i < students.length; i++) {
+    sam++;
+    som = som + students.age[i];
+  }
 }
+console.log("Average age:", som);
 
-]
- let som =0;
- let sam = 0;
+//  Daalgavar-9/1 ehnii objectiig hevlej garga
 
-
-function averageAge(){
-    for (let i =0; i <students.length; i++){
-        sam++;
-        som =som +students.gender[i]
-    }
-}
-console.log ("Average age:", som)
-
-console.log (students[0]);
-
-// let gen = genderNum (3 ,2);
-
-// console.log ("Eregtei emegtei huisiin too:", gen)
-
+console.log(students[0]);
