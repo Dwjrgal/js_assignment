@@ -53,9 +53,9 @@ function findAverage(numbers, sum) {
   for (let i = 0; i < numbers.length; i++) {
     sum = sum + numbers[i];
   }
-  console.log("sum", sum);
-  return (average = sum / numbers.length);
-  console.log("average", average);
+  console.log("average :", sum /numbers.length);
+//   return (average = sum / numbers.length);
+//   console.log("average", average);
 }
 
 let sum = 0;
@@ -67,7 +67,7 @@ console.log(findAverage(arrayNum, sum));
 function sumArray(sumNum) {
   let nom = 0;
   for (let i = 0; i < sumNum.length; i++) {
-    sumn = sumn + numbers[i];
+    sumn = sumn + sumNum[i];
   }
   console.log("sum:", sumn);
 }
@@ -79,7 +79,7 @@ console.log(sumArray(sumNum, sumn));
 
 function anhniiToo(x){
     if (x <=1 )return false;
-    if ( x===2 )return true;
+    if ( x === 2 )return true;
 
     for (let i =3; i*i<x; i+=2){
         if (x % i === 0) return false;
@@ -172,43 +172,47 @@ console.log(students[0]);
 // ANGID HEDEN EREGTEI EMEGTEI SURAGCH BAIGAAG OL
 
 // function findGen() {
-//   let sam = 0;
-//   let som = 0;
-//   for (let i = 0; i < students.length; i++) {
-//     sam++;
-//     som = som + students[i].gender;
-//   }
-//   if (gender === male) {
+  
+//   for (let i = 0; i < students.length; i++) { 
+//   if (students[i].gender === male) {
 //     return (i = male);
 //   } else {
 //     return female;
 //   }
 // }
 
-// let rep = findGen(students);
-// console.log("Average age:", rep);
+// }
+
+// let gender = findGen ();
+// console.log ("Eregtei emegtei too:", gender);
 
 // Нас нь 21-ээс дээш буюу тэнцүү сурагчдыг ол
 
-// function age21() {
-//   if (students[i].age >= 21) {
-//     return students[i].age;
-//   }
-//   let nastai = students[i].age;
-// }
+function age21() {
+for (let i =0; i <students.length; i++){
+  if (students[i].age >= 21) {
+    return students[i].age;  
+  }
+  }
+}
 
-// let ages = age21();
-// console.log("21 s deesh nastai:", ages);
+let ages = age21();
+console.log("21 s deesh nastai:", ages);
 
 // 60-аас дээш оноо авсан cурагчдийг тоол
 
 function more60() {
   for (let i = 0; i < students.length; i++) {
     if (students[i].points > 60) {
-      return (onoo = students[i].points);
+     onoo = onoo +students[i].points; 
     }
   }
 }
+let onoo = 0;
 
 let onootoi = more60();
-console.log("60s deesh onootoi:", onootoi);
+console.log("60s deesh onootoi:", onoo);
+
+// JS EXTRA-ASSIGNMENTS
+
+
