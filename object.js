@@ -64,16 +64,16 @@ console.log(findAverage(arrayNum, sum));
 
 // Daalgavar -5 array dotorh niilber oloh
 
-// function sumArray(sumn) {
-//   for (let i = 0; i < sumn.length; i++) {
-//     sumn = sumn + numbers[i];
-//   }
-//   console.log("sum", sumn);
-// }
-// let sumn = 0;
-// let sumNum = [23, 42, 11, 80];
-
-// console.log(sumArray(sumNum, sumn));
+function sumArray() {
+  let nom = 0;
+  for (let i = 0; i < sumn.length; i++) {
+    sumn = sumn + numbers[i];
+  }
+  console.log("sum:", sumn);
+}
+let sumn = 0;
+let sumNum = [23, 42, 11, 80];
+console.log(sumArray(sumNum, sumn));
 
 // Daalgavar -6 anhnii too mon esehiig oloh function bich
 
@@ -143,25 +143,43 @@ let students = [
 
     points: 85,
   },
-
-  // eregtei emegtei suragchiin too
-
-  function genderNum(gender) {
-    return gender == male;
-  },
 ];
 
-let som = 0;
-let sam = 0;
+//  AVERAGE AGE OLOKH ;
 
 function averageAge() {
+  let sam = 0;
+  let som = 0;
   for (let i = 0; i < students.length; i++) {
     sam++;
-    som = som + students.age[i];
+    som = som + students[i].age;
   }
+  let avg = som / sam;
+  return avg;
 }
-console.log("Average age:", som);
+
+let result = averageAge(students);
+console.log("Average age:", result);
 
 //  Daalgavar-9/1 ehnii objectiig hevlej garga
 
 console.log(students[0]);
+
+// ANGID HEDEN EREGTEI EMEGTEI SURAGCH BAIGAAG OL
+
+// function findGen() {
+//   let sam = 0;
+//   let som = 0;
+//   for (let i = 0; i < students.length; i++) {
+//     sam++;
+//     som = som + students[i].gender;
+//   }
+//   if (gender === male) {
+//     return (i = male);
+//   } else {
+//     return female;
+//   }
+// }
+
+// let rep = findGen(students);
+// console.log("Average age:", rep);
