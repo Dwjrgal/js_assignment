@@ -200,6 +200,7 @@ console.log(students[0]);
 
 function more60() {
   for (let i = 0; i < students.length; i++) {
+    sim = sim + students[i].points;
     if (students[i].points > 60) {
       return (onoo = students[i].points);
     }
