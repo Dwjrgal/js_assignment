@@ -31,20 +31,20 @@ let idx = findIndex(array, 10);
 
 // Daalgavar-3 Ogogdson temdegt moroos ogogdson temdegt mor baigaa esehiig ol
 
-let arraySign = ["!", "@", "#"];
-let sign = "!";
+let arraySign = ["Hello"];
 
-function arSign() {
+function arSign(arsign, sign) {
   for (let i = 0; i < arSign.length; i++) {
-    if (arSign[i] == sign) {
-      sign = arraySign[i];
+    if (arSign[i] === sign) {
+      return i;
     }
   }
+  return -1;
 }
 
-console.log("Ogogdson temdegt:", sign);
+// let signx = arSign(arraySign, H);
+// console.log ("index :",signx);
 
-arSign();
 
 // Daalgavar-4 Array iin dundajiig oloh /function bich
 
@@ -53,9 +53,9 @@ function findAverage(numbers, sum) {
   for (let i = 0; i < numbers.length; i++) {
     sum = sum + numbers[i];
   }
-  console.log("sum", sum);
-  return (average = sum / numbers.length);
-  console.log("average", average);
+  console.log("average :", sum /numbers.length);
+//   return (average = sum / numbers.length);
+//   console.log("average", average);
 }
 
 let sum = 0;
@@ -64,10 +64,10 @@ console.log(findAverage(arrayNum, sum));
 
 // Daalgavar -5 array dotorh niilber oloh
 
-function sumArray() {
+function sumArray(sumNum) {
   let nom = 0;
-  for (let i = 0; i < sumn.length; i++) {
-    sumn = sumn + numbers[i];
+  for (let i = 0; i < sumNum.length; i++) {
+    sumn = sumn + sumNum[i];
   }
   console.log("sum:", sumn);
 }
@@ -75,15 +75,19 @@ let sumn = 0;
 let sumNum = [23, 42, 11, 80];
 console.log(sumArray(sumNum, sumn));
 
-// Daalgavar -6 anhnii too mon esehiig oloh function bich
+// Daalgavar -6  Өгөгдсөн тоо анхны эсэхийг олох функц бич.
 
-function aToo(x) {
-  return x / x === 1;
+function anhniiToo(x){
+    if (x <=1 )return false;
+    if ( x === 2 )return true;
+
+    for (let i =3; i*i<x; i+=2){
+        if (x % i === 0) return false;
+    }
+    return true;
 }
 
-let anhniiToo = aToo(1, 2, 3);
-
-console.log("Anhnii too:", anhniiToo);
+console.log ( "Anhnii too mon eseh:",anhniiToo(2));
 
 // Daalgavar -7
 
@@ -168,44 +172,62 @@ console.log(students[0]);
 // ANGID HEDEN EREGTEI EMEGTEI SURAGCH BAIGAAG OL
 
 // function findGen() {
-//   let sam = 0;
-//   let som = 0;
-//   for (let i = 0; i < students.length; i++) {
-//     sam++;
-//     som = som + students[i].gender;
-//   }
-//   if (gender === male) {
+  
+//   for (let i = 0; i < students.length; i++) { 
+//   if (students[i].gender === male) {
 //     return (i = male);
 //   } else {
 //     return female;
 //   }
 // }
 
-// let rep = findGen(students);
-// console.log("Average age:", rep);
-
-// Нас нь 21-ээс дээш буюу тэнцүү сурагчдыг ол
-
-// function age21() {
-//   if (students[i].age >= 21) {
-//     return students[i].age;
-//   }
-//   let nastai = students[i].age;
 // }
 
-// let ages = age21();
-// console.log("21 s deesh nastai:", ages);
+// let gender = findGen ();
+// console.log ("Eregtei emegtei too:", gender);
 
-// 60-аас дээш оноо авсан cурагчдийг тоол
+// Нас нь 21-ээс дээш буюу тэнцүү сурагчдыг ол =>
+
+function age21() {
+for (let i =0; i <students.length; i++){
+  if (students[i].age >= 21) {
+    return students[i].age;  
+  }
+  }
+}
+
+let ages = age21();
+console.log("21 s deesh nastai:", ages);
+
+// 60-аас дээш оноо авсан cурагчдийг тоол =>
 
 function more60() {
   for (let i = 0; i < students.length; i++) {
     sim = sim + students[i].points;
     if (students[i].points > 60) {
-      return (onoo = students[i].points);
+     onoo = onoo +students[i].points; 
     }
   }
 }
+let onoo = 0;
 
 let onootoi = more60();
-console.log("60s deesh onootoi:", onootoi);
+console.log("60s deesh onootoi:", onoo);
+
+
+
+
+// -------------JS EXTRA-ASSIGNMENTS --------//
+
+
+
+let arr =[ 1, 2, 3, 4, 5]
+
+let max = Math.max (...arr);
+console.log ("MAX:",max);
+
+let min = Math.min (...arr);
+console.log ("MIN:",min);
+
+let ave = Math.avg (...arr);
+console.log ("Average:", ave);
