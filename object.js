@@ -279,13 +279,50 @@ const orders = [
   },
 ];
 
-function calculateTotalPrice(orders) {
+
+
+function calculateTotalPrice(orders) {  let sum = 0;
+
   for (let index = 0; index < orders.length; index++) {
     console.log(orders[index].items);
-    for (let pIndex = 0; pIndex < orders[index].items.length; pIndex++) {
-      sum = sum;
+    for (let pIndex = 0; pIndex < orders[index].items.length; pIndex++) {  
+      sum = sum + orders[index].items[pIndex].price;
     }
   }
+  console.log ("SUM:", sum )
+  return sum;
 }
 
+let total = calculateTotalPrice(orders);
+
 //-------- Daalgavar-3 -------//
+
+ // Hamgiin ih tsalintai ajiltang oloh =>
+
+const company = {
+  name: "Pinecone",
+  address: "123 Silicon Valley",
+  employees: [
+    { name: "Naraa", salary: 90000 },
+    { name: "Saraa", salary: 120000 },
+    { name: "Gerlee", salary: 110000 },
+  ],
+};
+
+
+function findMaxSalaryName(companyData) {
+  let ajilchid = companyData.employees;
+  let maxSalary = ajilchid[0].salary;
+  let maxSalaryName = "";
+  for (let i = 0; i < ajilchid.length; i++) {
+    if (ajilchid[i].salary > maxSalary) {
+      maxSalary = ajilchid[i].salary;
+      maxSalaryName = ajilchid[i].name;
+    }
+  }
+  return maxSalaryName;
+}
+
+let name = findMaxSalaryName(company);
+console.log("Hamgiin ih tsalintai ajiltan:",name);
+
