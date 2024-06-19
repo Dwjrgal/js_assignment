@@ -185,19 +185,16 @@ console.log(students[0]);
 // ANGID HEDEN EREGTEI EMEGTEI SURAGCH BAIGAAG OL
 
 // function findGen() {
-
 //   for (let i = 0; i < students.length; i++) {
-//   if (students[i].gender === male) {
-//     return (i = male);
-//   } else {
+//     if (students[i].gender === male) {
+//       return male;
+//     } else students[i].gender === female;
 //     return female;
 //   }
 // }
 
-// }
-
-// let gender = findGen ();
-// console.log ("Eregtei emegtei too:", gender);
+// let gender = findGen();
+// console.log("Eregtei emegtei too:", gender);
 
 // Нас нь 21-ээс дээш буюу тэнцүү сурагчдыг ол =>
 
@@ -236,13 +233,27 @@ console.log("60s deesh onootoi:", onoo);
 
 // Daalgavar-1 MAX ,MIN , AVG =>
 
-let arr = [1, 2, 3, 4, 5];
+function findAvgMinMax(arr) {
+  let baga = arr[0];
+  let ih = arr[0];
+  let dundaj = 0;
+  let niilber = 0;
+  for (let index = 0; index < arr.length; index++) {
+    if (baga > arr[index]) {
+      baga = arr[index];
+    }
+    if (ih < arr[index]) {
+      ih = arr[index];
+    }
+    niilber = niilber + arr[index];
+  }
+  dundaj = niilber / arr.length;
+  return {
+    min: baga,
+    max: ih,
+    avg: dundaj,
+  };
+}
 
-let max = Math.max(...arr);
-console.log("MAX:", max);
-
-let min = Math.min(...arr);
-console.log("MIN:", min);
-
-let ave = Math.avg(...arr);
-console.log("Average:", ave);
+let resultn = findAvgMinMax([18, 50, 12, 30, 90]);
+console.log("UR DUN: ", resultn);
