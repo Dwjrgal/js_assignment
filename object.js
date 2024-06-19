@@ -1,4 +1,4 @@
-// JS function & object assignment
+// ------------  JS function & object assignment ---------------//
 
 // Daalgavar-1 Ogogdson 2 toonii ihiig oloh function bich
 
@@ -45,7 +45,6 @@ function arSign(arsign, sign) {
 // let signx = arSign(arraySign, H);
 // console.log ("index :",signx);
 
-
 // Daalgavar-4 Array iin dundajiig oloh /function bich
 
 function findAverage(numbers, sum) {
@@ -53,9 +52,9 @@ function findAverage(numbers, sum) {
   for (let i = 0; i < numbers.length; i++) {
     sum = sum + numbers[i];
   }
-  console.log("average :", sum /numbers.length);
-//   return (average = sum / numbers.length);
-//   console.log("average", average);
+  console.log("average :", sum / numbers.length);
+  //   return (average = sum / numbers.length);
+  //   console.log("average", average);
 }
 
 let sum = 0;
@@ -77,25 +76,39 @@ console.log(sumArray(sumNum, sumn));
 
 // Daalgavar -6  Өгөгдсөн тоо анхны эсэхийг олох функц бич.
 
-function anhniiToo(x){
-    if (x <=1 )return false;
-    if ( x === 2 )return true;
+function anhniiToo(x) {
+  if (x <= 1) return false;
+  if (x === 2) return true;
 
-    for (let i =3; i*i<x; i+=2){
-        if (x % i === 0) return false;
-    }
-    return true;
+  for (let i = 3; i * i < x; i += 2) {
+    if (x % i === 0) return false;
+  }
+  return true;
 }
 
-console.log ( "Anhnii too mon eseh:",anhniiToo(2));
+console.log("Anhnii too mon eseh:", anhniiToo(2));
 
 // Daalgavar -7
 
 // Daalgavar-8 string utgiig urvuugaar bich
 
-let string = ["Hello"];
+// function reverseString(arr) {
+//   let reversed = ["Hello"];
+//   for (let i = arr.lenght - 1; i >= 0; i--) {
+//     reversed.push(arr[i]);
+//   }
+//   return reversed;
+// }
 
-for (let i = 0; i < string.length; i++) {}
+// let rev = reverseString(arr);
+// console.log("reversed:", rev);
+
+// let string = ["Hello"];
+
+// let reversedString = string.slice(string).reverse(string);
+// console.log(reversedString);
+
+// for (let i = 0; i < string.length; i++) {}
 
 let students = [
   {
@@ -172,8 +185,8 @@ console.log(students[0]);
 // ANGID HEDEN EREGTEI EMEGTEI SURAGCH BAIGAAG OL
 
 // function findGen() {
-  
-//   for (let i = 0; i < students.length; i++) { 
+
+//   for (let i = 0; i < students.length; i++) {
 //   if (students[i].gender === male) {
 //     return (i = male);
 //   } else {
@@ -189,23 +202,28 @@ console.log(students[0]);
 // Нас нь 21-ээс дээш буюу тэнцүү сурагчдыг ол =>
 
 function age21() {
-for (let i =0; i <students.length; i++){
-  if (students[i].age >= 21) {
-    return students[i].age;  
+  let sum = "";
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].age >= 21) {
+      // ages.push(students[i].age);
+      sum += " " + students[i].age;
+    }
   }
-  }
+  return sum;
 }
 
 let ages = age21();
-console.log("21 s deesh nastai:", ages);
+console.log("21-s deesh nastai :", ages);
 
 // 60-аас дээш оноо авсан cурагчдийг тоол =>
+
+let sim;
 
 function more60() {
   for (let i = 0; i < students.length; i++) {
     sim = sim + students[i].points;
     if (students[i].points > 60) {
-     onoo = onoo +students[i].points; 
+      onoo = onoo + students[i].points;
     }
   }
 }
@@ -214,20 +232,17 @@ let onoo = 0;
 let onootoi = more60();
 console.log("60s deesh onootoi:", onoo);
 
-
-
-
 // -------------JS EXTRA-ASSIGNMENTS --------//
 
+// Daalgavar-1 MAX ,MIN , AVG =>
 
+let arr = [1, 2, 3, 4, 5];
 
-let arr =[ 1, 2, 3, 4, 5]
+let max = Math.max(...arr);
+console.log("MAX:", max);
 
-let max = Math.max (...arr);
-console.log ("MAX:",max);
+let min = Math.min(...arr);
+console.log("MIN:", min);
 
-let min = Math.min (...arr);
-console.log ("MIN:",min);
-
-let ave = Math.avg (...arr);
-console.log ("Average:", ave);
+let ave = Math.avg(...arr);
+console.log("Average:", ave);
