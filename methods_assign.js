@@ -45,3 +45,6 @@ console.log ("Hi", ar)
 
 let string = ['the quick brown fox'];
 
+let stir = string.shift();
+
+console.log (stir)
