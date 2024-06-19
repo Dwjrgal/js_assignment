@@ -257,3 +257,35 @@ function findAvgMinMax(arr) {
 
 let resultn = findAvgMinMax([18, 50, 12, 30, 90]);
 console.log("UR DUN: ", resultn);
+
+// -------- Daalgavar-2 ----------//
+
+// Ogogdson zahialgiin niit borluulaltiin dun
+
+const orders = [
+  {
+    orderId: 1,
+    items: [
+      { itemName: "Apple", price: 1 },
+      { itemName: "Banana", price: 2 },
+    ],
+  },
+  {
+    orderId: 2,
+    items: [
+      { itemName: "Orange", price: 1.5 },
+      { itemName: "Grapes", price: 3 },
+    ],
+  },
+];
+
+function calculateTotalPrice(orders) {
+  for (let index = 0; index < orders.length; index++) {
+    console.log(orders[index].items);
+    for (let pIndex = 0; pIndex < orders[index].items.length; pIndex++) {
+      sum = sum;
+    }
+  }
+}
+
+//-------- Daalgavar-3 -------//
