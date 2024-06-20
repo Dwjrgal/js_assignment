@@ -62,6 +62,9 @@ console.log("Average:", findAvg);
 
 let string = "the quick brown fox";
 
+let text = string.split(",");
+console.log (text);
+
 // function firstLetter(stir) {
 //   let son = "";
 //   for (let i = 0; i === string.lenght; i--) {
@@ -73,8 +76,71 @@ let string = "the quick brown fox";
 
 // let firstle = firstLetter();
 
-let stir = string.split();
+// let stir = string.split();
 
-console.log(stir);
+// console.log(stir);
 
 //--------- Daalgavar-5 --------------//Urvuugaar butsaah
+
+
+function reverseText(text) {
+    // "hello world" => split(" ") => ["hello","world"]
+    return text.split("").reverse().join("");
+    // ["h","e","l","l","o"] =>["o","l","l","e","h"]
+  }
+
+
+const textArr = ["Hello", "World", "Pinecone"];
+function reverseArray(inputArr) {
+  let r = [];
+  for (let i = 0; i < inputArr.length; i++) {
+    r.push(reverseText(inputArr[i]));
+  }
+  return r;
+}
+
+let ra = reverseArray(textArr);
+console.log(textArr);
+console.log("Reversed array:", ra);
+
+
+//  ---------- Daalgavar-6 ---------Ogogdson text dotor tuhain oruulsan keyword baigaa uguig shalgah function bich:
+
+let rdnText = prompt (" Ta duriin 3-5 amitnii ner oruulna uu:")
+function findKeyWord(inputText){
+    for (let i =0; i < inputText.length; i++){
+        console.log ("Ogogdson amitan baigaa eseh:", inputText.includes("dog"))
+    }
+
+}
+
+ let findKey = findKeyWord(rdnText);
+
+
+ // ---------- Daalgavar-7 --------
+// Niit borluulaltiin dung tootsooloh:
+
+
+const data = [
+
+    {productName:"Bakery", unitPrice:5000, 
+        amount: 200,
+         totalPrice: 500000 ,
+          casherId:1,
+          date: '2022-11-01'},
+
+    {productName:"Chocolate", unitPrice:3000,
+         amount: 18,
+          totalPrice: 54.000, 
+          casherId:1,
+           date: '2022-11-01'},
+
+];
+
+let niitDun = 0;
+
+for (let i =0; i < data.length; i++ ){
+    niitDun += data[i].totalPrice;
+}
+
+console.log ("Total Price:",niitDun)
