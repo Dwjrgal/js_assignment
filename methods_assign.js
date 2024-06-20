@@ -1,6 +1,6 @@
 //------JS array & string methods assignments-------
 
-// ----------- Daalgavar-1 ---------
+// ----------- Daalgavar-1 ---------//
 
 //Ogogdson array ruu too nemj oruuldag function bich
 
@@ -14,7 +14,7 @@ console.log("NewArr", newArr);
 newArr = addArr([1, 2, 3, 4], 5);
 console.log("NewArr:", newArr);
 
-// ------ Daalgavr-2 -------- Array uusgeh function bich:
+// ------ Daalgavr-2 --------// Array uusgeh function bich:
 
 function createNewArr(arr, len) {
   for (let i = 1; i < len; i++) {
@@ -23,7 +23,7 @@ function createNewArr(arr, len) {
   }
 }
 
-//-------- Daalgavar-3 ------garaas oruulsan toonii sum avg oldog function bichih
+//-------- Daalgavar-3 ------//garaas oruulsan toonii sum avg oldog function bichih
 
 let random = prompt("Ta ymar negen too oruulna uu:");
 let ogsonToo = random.split(",");
@@ -57,7 +57,7 @@ function avg(input) {
 let findAvg = avg(ogsonToo);
 console.log("Average:", findAvg);
 
-// ------------- Daalagvar- 4 ----------
+//------------- Daalagvar- 4 ---------//
 // Ogogdson string iin buh usgiig tom bolgoh
 
 let string = "the quick brown fox";
@@ -104,7 +104,7 @@ console.log(textArr);
 console.log("Reversed array:", ra);
 
 
-//  ---------- Daalgavar-6 ---------Ogogdson text dotor tuhain oruulsan keyword baigaa uguig shalgah function bich:
+//  ---------- Daalgavar-6 ---------//Ogogdson text dotor tuhain oruulsan keyword baigaa uguig shalgah function bich:
 
 let rdnText = prompt (" Ta duriin 3-5 amitnii ner oruulna uu:")
 function findKeyWord(inputText){
@@ -117,7 +117,7 @@ function findKeyWord(inputText){
  let findKey = findKeyWord(rdnText);
 
 
- // ---------- Daalgavar-7 --------
+ // ---------- Daalgavar-7 --------//
 // Niit borluulaltiin dung tootsooloh:
 
 
@@ -137,10 +137,35 @@ const data = [
 
 ];
 
+function findTotalP(marketData){
 let niitDun = 0;
 
 for (let i =0; i < data.length; i++ ){
     niitDun += data[i].totalPrice;
 }
+return niitDun;
 
-console.log ("Total Price:",niitDun)
+}
+let l =  findTotalP(data);
+console.log ("Total Price:", l);
+
+
+// ---------- Daalgavar-8 ----------//
+// Niit borluulagdsan baraanii toog ol
+
+function findProAmount(marketData){
+    let niitToo = 0;
+
+    for (let i = 0; i < data.length; i++){
+        niitToo += data[i].amount;
+    }
+    return niitToo;
+
+}
+
+let sh = findProAmount(data);
+console.log ("Total amount:", sh);
+
+
+//  --------- Daalgavar-9 --------//
+// Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.
