@@ -2,49 +2,79 @@
 
 //Daalgavar -1
 
-//Ogogdson array ruu too nemj oruuldag function bich 
+//Ogogdson array ruu too nemj oruuldag function bich
 
-let array = [ 1, 2, 3, 4,];
+function addArr(arr, too) {
+  arr.push(too);
+  return arr;
+}
 
-let count = array.push( 5 );
-console.log ("Too nemj oruulakh:", array);
-
+let newArr = addArr([], 10);
+console.log("NewArr", newArr);
+newArr = addArr([1, 2, 3, 4], 5);
+console.log("NewArr:", newArr);
 
 // Daalgavr-2 Array uusgeh function bich:
 
-let empty = [];
-
-empty.splice(0, 1, '1, 2, 3,' )
-
-console.log ("Array uusgeh:", empty)
-
-
-
-// Daalgavar -3 garaas oruulsan toonii sum avg oldog fuction bichih
-
-    
-let arr = prompt("Ta ymar negen too oruulna uu:")
-
-function sumAvg ( random ){
-let sum = 0;
-let avg = 0;
-
-    for (let i =0; i <random.lenght; i++){
-        sum +=arr[i];
-    }
-    avg = sum / random.lenght;
-    return avg;
-
+function createNewArr(arr, len) {
+  for (let i = 1; i < len; i++) {
+    let rndToo = Math.random;
+    arr.push(rndToo);
+  }
 }
 
-let ar = sumAvg(1,2, 3,);
-console.log ("Hi", ar) 
+//-------- Daalgavar-3 ------garaas oruulsan toonii sum avg oldog function bichih
 
-// ---- Daalagvar- 4 --- 
-// Ogogdson string iin buh usgiig tom bolgoh 
+let random = prompt("Ta ymar negen too oruulna uu:");
+let ogsonToo = random.split(",");
+console.log("Garaas oruulsan too:", ogsonToo);
 
-let string = ['the quick brown fox'];
+function sum(input) {
+  let numb = [];
+  let sum = 0;
+  for (let i = 0; i < input.length; i++) {
+    numb.push(Number(input[i]));
+    sum += numb[i];
+  }
+  return sum;
+}
 
-let stir = string.shift();
+let som = sum(ogsonToo);
+console.log("SUM:", som);
 
-console.log (stir)
+function avg(input) {
+  let numb = [];
+  let av = 0;
+  let sum = 0;
+  for (let i = 0; i < input.length; i++) {
+    numb.push(Number(input[i]));
+    sum += numb[i];
+  }
+  av = sum / input.length;
+  return av;
+}
+
+let findAvg = avg(ogsonToo);
+console.log("Average:", findAvg);
+
+// ------------- Daalagvar- 4 ----------
+// Ogogdson string iin buh usgiig tom bolgoh
+
+let string = "the quick brown fox";
+
+// function firstLetter(stir) {
+//   let son = "";
+//   for (let i = 0; i === string.lenght; i--) {
+//     son = son - string[i[0]];
+//     stir.push("THE QUICK BROWN FOXZ");
+//     console.log(stir);
+//   }
+// }
+
+// let firstle = firstLetter();
+
+let stir = string.split("");
+
+console.log(stir);
+
+//--------- Daalgavar-5 --------------//Urvuugaar butsaah
