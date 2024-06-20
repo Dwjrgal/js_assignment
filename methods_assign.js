@@ -1,6 +1,6 @@
 //------JS array & string methods assignments-------
 
-//Daalgavar -1
+// ----------- Daalgavar-1 ---------
 
 //Ogogdson array ruu too nemj oruuldag function bich
 
@@ -14,7 +14,7 @@ console.log("NewArr", newArr);
 newArr = addArr([1, 2, 3, 4], 5);
 console.log("NewArr:", newArr);
 
-// Daalgavr-2 Array uusgeh function bich:
+// ------ Daalgavr-2 -------- Array uusgeh function bich:
 
 function createNewArr(arr, len) {
   for (let i = 1; i < len; i++) {
@@ -73,7 +73,7 @@ let string = "the quick brown fox";
 
 // let firstle = firstLetter();
 
-let stir = string.split("");
+let stir = string.split();
 
 console.log(stir);
 
