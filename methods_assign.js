@@ -134,7 +134,18 @@ const data = [
           totalPrice: 54.000, 
           casherId:1,
            date: '2022-11-01'},
-
+    
+    {productName:"Ice-cream", unitPrice:3000,
+    amount: 15,
+    totalPrice: 45000, 
+     casherId:1,
+      date: '2022-11-01'},
+    
+      {productName:"Yogurt", unitPrice:5000,
+        amount: 12,
+         totalPrice: 60000, 
+         casherId:1,
+          date: '2022-11-01'},
 ];
 
 function findTotalP(marketData){
@@ -169,3 +180,33 @@ console.log ("Total amount:", sh);
 
 //  --------- Daalgavar-9 --------//
 // Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.
+
+
+function mostSold ( marketData ){
+    let sol = [];     
+    for (let i = 0; i < data.length; i++){
+        sol += data[i].totalPrice;
+    }
+    return sol.split('');
+
+}
+
+let totalSales = mostSold (data);
+console.log (totalSales);
+
+
+//----------  Daalgavar-10 ---------//
+//  Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгэр/ харуулах.
+
+
+function leastSold ( marketData ){
+    let sol = [];     
+    for (let i = 0; i < data.length; i++){
+        sol += data[i].totalPrice;
+    }
+    return sol.split('');
+
+}
+
+let least  = mostSold (data);
+console.log (least );
