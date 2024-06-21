@@ -250,4 +250,3 @@ function leastSold(marketData) {
 }
 
 let least = leastSold(data);
-``;
