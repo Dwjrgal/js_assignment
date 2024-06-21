@@ -68,7 +68,7 @@ function convertToUpperCase(str) {
 
 let lowercaseString = "the quick brown fox";
 let uppercaseString = convertToUpperCase(lowercaseString);
-console.log(" Upper case  string:", uppercaseString);
+console.log(" UPPER CASE STRING :", uppercaseString);
 
 //--------- Daalgavar-5 --------------//Urvuugaar butsaah
 
@@ -76,7 +76,7 @@ function reverseText(text) {
   return text.split("").reverse().join("");
 }
 
-const textArr = ["Hello", "World", "Pinecone"];
+const textArr = ["Hello", "World", "Javascript", "Array"];
 function reverseArray(inputArr) {
   let r = [];
   for (let i = 0; i < inputArr.length; i++) {
@@ -132,10 +132,58 @@ const data = [
   },
 
   {
-    productName: "Yogurt",
+    productName: "Apple",
+    unitPrice: 2500,
+    amount: 10,
+    totalPrice: 25000,
+    casherId: 1,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Juice",
+    unitPrice: 4000,
+    amount: 10,
+    totalPrice: 40000,
+    casherId: 1,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Banana",
+    unitPrice: 5000,
+    amount: 15,
+    totalPrice: 75000,
+    casherId: 1,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Cookies",
     unitPrice: 5000,
     amount: 12,
     totalPrice: 60000,
+    casherId: 1,
+    date: "2022-11-01",
+  },
+  {
+    productName: "lolly-pop",
+    unitPrice: 500,
+    amount: 20,
+    totalPrice: 10000,
+    casherId: 1,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Coffee",
+    unitPrice: 5000,
+    amount: 2,
+    totalPrice: 10000,
+    casherId: 1,
+    date: "2022-11-01",
+  },
+  {
+    productName: "Strawberry",
+    unitPrice: 8000,
+    amount: 6,
+    totalPrice: 48000,
     casherId: 1,
     date: "2022-11-01",
   },
@@ -171,26 +219,35 @@ console.log("Total amount:", sh);
 // Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.
 
 function mostSold(marketData) {
-  let sol = [];
-  for (let i = 0; i < data.length; i++) {
-    sol += data[i].totalPrice;
+  let arr = [];
+  for (let i = 0; i < marketData.length; i++) {
+    // let max5 = marketData[i].totalPrice.sort();
+    arr.push(marketData[i].totalPrice);
+    // console.log("priceArr", arr);
+    let sortedArr = arr.sort((a, b) => b - a);
+    // console.log("sortedArr", sortedArr);
+    let top5 = sortedArr.slice(0, 5);
+    console.log("top5", top5);
   }
-  return sol.split("").join();
 }
 
 let totalSales = mostSold(data);
-console.log(totalSales);
 
 //----------  Daalgavar-10 ---------//
 //  Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгэр/ харуулах.
 
 function leastSold(marketData) {
-  let amo = [];
-  for (let i = 0; i < data.length; i++) {
-    amo += data[i].amount;
+  let minArr = [];
+  for (let i = 0; i < marketData.length; i++) {
+    // let max5 = marketData[i].totalPrice.sort();
+    minArr.push(marketData[i].totalPrice);
+    // console.log("priceArr", arr);
+    let sortedArr = minArr.sort((a, b) => b - a);
+    console.log("sortedArr", sortedArr);
+    let top5 = sortedArr.slice(5);
+    console.log("min5", min5);
   }
-  return amo.split(",").join();
 }
 
 let least = leastSold(data);
-console.log(least);
+``;
