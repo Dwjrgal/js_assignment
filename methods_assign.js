@@ -189,7 +189,7 @@ function leastSold(marketData) {
   for (let i = 0; i < data.length; i++) {
     amo += data[i].amount;
   }
-  return amo.split("");
+  return amo.split(",").join();
 }
 
 let least = leastSold(data);
