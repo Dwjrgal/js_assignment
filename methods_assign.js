@@ -60,35 +60,21 @@ console.log("Average:", findAvg);
 //------------- Daalagvar- 4 ---------//
 // Ogogdson string iin buh usgiig tom bolgoh
 
-let string = "the quick brown fox";
+let string = [" the quick brown fox"];
 
-let text = string.split(",");
-console.log (text);
+function convertToUpperCase(str) {
+  return str.toUpperCase(string);
+}
 
-// function firstLetter(stir) {
-//   let son = "";
-//   for (let i = 0; i === string.lenght; i--) {
-//     son = son - string[i[0]];
-//     stir.push("THE QUICK BROWN FOXZ");
-//     console.log(stir);
-//   }
-// }
-
-// let firstle = firstLetter();
-
-// let stir = string.split();
-
-// console.log(stir);
+let lowercaseString = "the quick brown fox";
+let uppercaseString = convertToUpperCase(lowercaseString);
+console.log(" Upper case  string:", uppercaseString);
 
 //--------- Daalgavar-5 --------------//Urvuugaar butsaah
 
-
 function reverseText(text) {
-    // "hello world" => split(" ") => ["hello","world"]
-    return text.split("").reverse().join("");
-    // ["h","e","l","l","o"] =>["o","l","l","e","h"]
-  }
-
+  return text.split("").reverse().join("");
+}
 
 const textArr = ["Hello", "World", "Pinecone"];
 function reverseArray(inputArr) {
@@ -103,110 +89,108 @@ let ra = reverseArray(textArr);
 console.log(textArr);
 console.log("Reversed array:", ra);
 
-
 //  ---------- Daalgavar-6 ---------//Ogogdson text dotor tuhain oruulsan keyword baigaa uguig shalgah function bich:
 
-let rdnText = prompt (" Ta duriin 3-5 amitnii ner oruulna uu:")
-function findKeyWord(inputText){
-    for (let i =0; i < inputText.length; i++){
-        console.log ("Ogogdson amitan baigaa eseh:", inputText.includes("dog"))
-    }
-
+let rdnText = prompt(" Ta duriin 3-5 amitnii ner oruulna uu:");
+function findKeyWord(inputText) {
+  for (let i = 0; i < inputText.length; i++) {
+    console.log("Ogogdson amitan baigaa eseh:", inputText.includes("dog"));
+  }
 }
 
- let findKey = findKeyWord(rdnText);
+let findKey = findKeyWord(rdnText);
 
-
- // ---------- Daalgavar-7 --------//
+// ---------- Daalgavar-7 --------//
 // Niit borluulaltiin dung tootsooloh:
 
-
 const data = [
+  {
+    productName: "Bakery",
+    unitPrice: 5000,
+    amount: 200,
+    totalPrice: 500000,
+    casherId: 1,
+    date: "2022-11-01",
+  },
 
-    {productName:"Bakery", unitPrice:5000, 
-        amount: 200,
-         totalPrice: 500000 ,
-          casherId:1,
-          date: '2022-11-01'},
+  {
+    productName: "Chocolate",
+    unitPrice: 3000,
+    amount: 18,
+    totalPrice: 54.0,
+    casherId: 1,
+    date: "2022-11-01",
+  },
 
-    {productName:"Chocolate", unitPrice:3000,
-         amount: 18,
-          totalPrice: 54.000, 
-          casherId:1,
-           date: '2022-11-01'},
-    
-    {productName:"Ice-cream", unitPrice:3000,
+  {
+    productName: "Ice-cream",
+    unitPrice: 3000,
     amount: 15,
-    totalPrice: 45000, 
-     casherId:1,
-      date: '2022-11-01'},
-    
-      {productName:"Yogurt", unitPrice:5000,
-        amount: 12,
-         totalPrice: 60000, 
-         casherId:1,
-          date: '2022-11-01'},
+    totalPrice: 45000,
+    casherId: 1,
+    date: "2022-11-01",
+  },
+
+  {
+    productName: "Yogurt",
+    unitPrice: 5000,
+    amount: 12,
+    totalPrice: 60000,
+    casherId: 1,
+    date: "2022-11-01",
+  },
 ];
 
-function findTotalP(marketData){
-let niitDun = 0;
+function findTotalP(marketData) {
+  let niitDun = 0;
 
-for (let i =0; i < data.length; i++ ){
+  for (let i = 0; i < data.length; i++) {
     niitDun += data[i].totalPrice;
+  }
+  return niitDun;
 }
-return niitDun;
-
-}
-let l =  findTotalP(data);
-console.log ("Total Price:", l);
-
+let l = findTotalP(data);
+console.log("Total Price:", l);
 
 // ---------- Daalgavar-8 ----------//
 // Niit borluulagdsan baraanii toog ol
 
-function findProAmount(marketData){
-    let niitToo = 0;
+function findProAmount(marketData) {
+  let niitToo = 0;
 
-    for (let i = 0; i < data.length; i++){
-        niitToo += data[i].amount;
-    }
-    return niitToo;
-
+  for (let i = 0; i < data.length; i++) {
+    niitToo += data[i].amount;
+  }
+  return niitToo;
 }
 
 let sh = findProAmount(data);
-console.log ("Total amount:", sh);
-
+console.log("Total amount:", sh);
 
 //  --------- Daalgavar-9 --------//
 // Хамгийн их зарагдсан 5 барааны жагсаалт /боруулалтын үнийн дүнгээр/ харуулах.
 
-
-function mostSold ( marketData ){
-    let sol = [];     
-    for (let i = 0; i < data.length; i++){
-        sol += data[i].totalPrice;
-    }
-    return sol.split('');
-
+function mostSold(marketData) {
+  let sol = [];
+  for (let i = 0; i < data.length; i++) {
+    sol += data[i].totalPrice;
+  }
+  return sol.split("").join();
 }
 
-let totalSales = mostSold (data);
-console.log (totalSales);
-
+let totalSales = mostSold(data);
+console.log(totalSales);
 
 //----------  Daalgavar-10 ---------//
 //  Хамгийн бага зарагдсан 5 барааны жагсаалт /боруулалтын тоо хэмжээгэр/ харуулах.
 
-
-function leastSold ( marketData ){
-    let sol = [];     
-    for (let i = 0; i < data.length; i++){
-        sol += data[i].totalPrice;
-    }
-    return sol.split('');
-
+function leastSold(marketData) {
+  let amo = [];
+  for (let i = 0; i < data.length; i++) {
+    amo += data[i].amount;
+  }
+  return amo.split("");
 }
 
-let least  = mostSold (data);
-console.log (least );
+let least = leastSold(data);
+console.log(least);
